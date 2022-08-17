@@ -12,7 +12,7 @@ A rebrand and updated Minecraft mod of Metals!
 *  **TITANIUM**(2, 1300, 7.0F, 2.5F, 12)
 *  **AUTIUM**(2, 1200, 11.0F, 2.25F, 20)
 * DIAMOND(3, 1561, 8.0F, 3.0F, 10)
-*  **DIATANIUM(3, 1750, 8.0F, 3.5F, 11)
+*  **DIATANIUM**(3, 1750, 8.0F, 3.5F, 11)
 * NETHERITE(4, 2031, 9.0F, 4.0F, 15)
 
 
