@@ -25,3 +25,9 @@ A rebrand and updated Minecraft mod of Metals!
 * Diatanium - Diamond + Titanium
   * better than diamond, less than Netherite
 
+# Armor Models
+* Bone has non-3d helmet, that is a skull
+* Bone has 3d model for chestplate with skulls for shoulder guards, spine spikes
+* Titanium has 3d helmet - 3 blades
+* Autium has 3d helmet - wings
+* Autium has 3d chestplate - overlapping blades on shoulders
