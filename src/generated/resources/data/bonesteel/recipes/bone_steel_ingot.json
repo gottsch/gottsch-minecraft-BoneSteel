@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "bone_steel_ingot",
+  "ingredients": [
+    [
+      {
+        "item": "bonesteel:steel_ingot"
+      },
+      {
+        "item": "minecraft:bone"
+      }
+    ]
+  ],
+  "result": {
+    "item": "bonesteel:bone_steel_ingot"
+  }
+}

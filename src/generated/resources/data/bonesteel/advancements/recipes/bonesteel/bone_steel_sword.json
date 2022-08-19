@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "bonesteel:bone_steel_sword"
+    ]
+  },
+  "criteria": {
+    "has_bone_steel_ingot": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bonesteel:bone_steel_ingot"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "bonesteel:bone_steel_sword"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_bone_steel_ingot",
+      "has_the_recipe"
+    ]
+  ]
+}

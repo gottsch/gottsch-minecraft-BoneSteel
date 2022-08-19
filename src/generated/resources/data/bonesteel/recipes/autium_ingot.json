@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "autium_ingot",
+  "ingredients": [
+    [
+      {
+        "item": "bonesteel:titanium_ingot"
+      },
+      {
+        "item": "minecraft:gold_ingot"
+      }
+    ]
+  ],
+  "result": {
+    "item": "bonesteel:autium_ingot"
+  }
+}

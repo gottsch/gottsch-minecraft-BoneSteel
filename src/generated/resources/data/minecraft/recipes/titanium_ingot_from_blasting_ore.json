@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:blasting",
+  "group": "titanium_ingot",
+  "ingredient": {
+    "item": "bonesteel:titanium_ore"
+  },
+  "result": "bonesteel:titanium_ingot",
+  "experience": 1.0,
+  "cookingtime": 200
+}
