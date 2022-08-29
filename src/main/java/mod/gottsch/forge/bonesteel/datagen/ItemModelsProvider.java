@@ -76,6 +76,15 @@ public class ItemModelsProvider extends ItemModelProvider {
         		mcLoc("item/handheld"), "layer0", modLoc("item/titanium_shovel"));
         
         // armor
+        singleTexture(Registration.BONE_HELMET.get().getRegistryName().getPath(),
+        		mcLoc("item/generated"), "layer0", modLoc("item/bone_helmet"));
+        singleTexture(Registration.BONE_CHESTPLATE.get().getRegistryName().getPath(),
+        		mcLoc("item/generated"), "layer0", modLoc("item/bone_chestplate"));
+        singleTexture(Registration.BONE_LEGGINGS.get().getRegistryName().getPath(),
+        		mcLoc("item/generated"), "layer0", modLoc("item/bone_leggings"));
+        singleTexture(Registration.BONE_BOOTS.get().getRegistryName().getPath(),
+        		mcLoc("item/generated"), "layer0", modLoc("item/bone_boots"));
+        
         singleTexture(Registration.TITANIUM_HELMET.get().getRegistryName().getPath(),
         		mcLoc("item/generated"), "layer0", modLoc("item/titanium_helmet"));
         singleTexture(Registration.TITANIUM_CHESTPLATE.get().getRegistryName().getPath(),

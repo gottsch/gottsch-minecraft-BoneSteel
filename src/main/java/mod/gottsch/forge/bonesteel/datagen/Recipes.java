@@ -193,5 +193,73 @@ public class Recipes extends RecipeProvider {
         .group("bonesteel")
         .unlockedBy("has_titanium_ingot", InventoryChangeTrigger.TriggerInstance.hasItems(Registration.TITANIUM_INGOT.get()))
         .save(recipe);
+        
+        // armor
+        ShapedRecipeBuilder.shaped(Registration.BONE_HELMET.get())
+        .pattern("xxx")
+        .pattern("x x")
+        .pattern("   ")
+        .define('x', Items.BONE)
+         .group("bonesteel")
+        .unlockedBy("has_bone", InventoryChangeTrigger.TriggerInstance.hasItems(Items.BONE));
+        
+        ShapedRecipeBuilder.shaped(Registration.BONE_CHESTPLATE.get())
+        .pattern("x x")
+        .pattern("LxL")
+        .pattern("xxx")
+        .define('x', Items.BONE)
+        .define('L', Items.LEATHER)
+         .group("bonesteel")
+        .unlockedBy("has_ingredients", InventoryChangeTrigger.TriggerInstance.hasItems(Items.BONE, Items.LEATHER));
+        
+        ShapedRecipeBuilder.shaped(Registration.BONE_LEGGINGS.get())
+        .pattern("xxx")
+        .pattern("L L")
+        .pattern("x x")
+        .define('x', Items.BONE)
+        .define('L', Items.LEATHER)
+         .group("bonesteel")
+        .unlockedBy("has_ingredients", InventoryChangeTrigger.TriggerInstance.hasItems(Items.BONE, Items.LEATHER));
+        
+        ShapedRecipeBuilder.shaped(Registration.BONE_BOOTS.get())
+        .pattern("   ")
+        .pattern("x x")
+        .pattern("L L")
+        .define('x', Items.BONE)
+        .define('L', Items.LEATHER)
+         .group("bonesteel")
+        .unlockedBy("has_ingredients", InventoryChangeTrigger.TriggerInstance.hasItems(Items.BONE, Items.LEATHER));
+        
+        ShapedRecipeBuilder.shaped(Registration.TITANIUM_HELMET.get())
+        .pattern("xxx")
+        .pattern("x x")
+        .pattern("   ")
+        .define('x', Registration.TITANIUM_INGOT.get())
+         .group("bonesteel")
+        .unlockedBy("has_titanium_ingot", InventoryChangeTrigger.TriggerInstance.hasItems(Registration.TITANIUM_INGOT.get()));
+        
+        ShapedRecipeBuilder.shaped(Registration.TITANIUM_CHESTPLATE.get())
+        .pattern("x x")
+        .pattern("xxx")
+        .pattern("xxx")
+        .define('x', Registration.TITANIUM_INGOT.get())
+         .group("bonesteel")
+        .unlockedBy("has_titanium_ingot", InventoryChangeTrigger.TriggerInstance.hasItems(Registration.TITANIUM_INGOT.get()));
+        
+        ShapedRecipeBuilder.shaped(Registration.TITANIUM_LEGGINGS.get())
+        .pattern("xxx")
+        .pattern("x x")
+        .pattern("x x")
+        .define('x', Registration.TITANIUM_INGOT.get())
+         .group("bonesteel")
+        .unlockedBy("has_titanium_ingot", InventoryChangeTrigger.TriggerInstance.hasItems(Registration.TITANIUM_INGOT.get()));
+        
+        ShapedRecipeBuilder.shaped(Registration.TITANIUM_BOOTS.get())
+        .pattern("   ")
+        .pattern("x x")
+        .pattern("x x")
+        .define('x', Registration.TITANIUM_INGOT.get())
+         .group("bonesteel")
+        .unlockedBy("has_titanium_ingot", InventoryChangeTrigger.TriggerInstance.hasItems(Registration.TITANIUM_INGOT.get()));
 	}
 }

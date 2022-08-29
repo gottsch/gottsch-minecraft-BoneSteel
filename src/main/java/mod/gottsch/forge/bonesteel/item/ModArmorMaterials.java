@@ -35,9 +35,9 @@ import net.minecraft.world.item.crafting.Ingredient;
  *
  */
 public enum ModArmorMaterials implements ArmorMaterial {
-//	LEATHER("leather", 5, new int[]{1, 2, 3, 1}, 15, SoundEvents.ARMOR_EQUIP_LEATHER, 0.0F, 0.0F, () -> {
-//		return Ingredient.of(Items.LEATHER);
-//	}),
+	BONE("bone", 22, new int[]{ 2, 5, 6, 2}, 11, SoundEvents.ARMOR_EQUIP_LEATHER, 0.5F, 0.0F, () -> {
+		return Ingredient.of(Items.BONE);
+	}),
 //	CHAIN("chainmail", 15, new int[]{1, 4, 5, 2}, 12, SoundEvents.ARMOR_EQUIP_CHAIN, 0.0F, 0.0F, () -> {
 //		return Ingredient.of(Items.IRON_INGOT);
 //	}),
@@ -67,6 +67,9 @@ public enum ModArmorMaterials implements ArmorMaterial {
 	private final float knockbackResistance;
 	private final LazyLoadedValue<Ingredient> repairIngredient;
 
+	/*
+	 * 
+	 */
 	private ModArmorMaterials(String name, int durability, int[] slotProtections, int enchantability, SoundEvent sound, 
 			float toughness, float knockbackResistance, Supplier<Ingredient> repair) {
 		this.name = name;

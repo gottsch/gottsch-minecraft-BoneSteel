@@ -18,7 +18,9 @@
 package mod.gottsch.forge.bonesteel.setup;
 
 import mod.gottsch.forge.bonesteel.BoneSteel;
+import mod.gottsch.forge.bonesteel.item.BoneArmorItem;
 import mod.gottsch.forge.bonesteel.item.ModArmorMaterials;
+import mod.gottsch.forge.bonesteel.item.TitaniumArmorItem;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.ArmorItem;
@@ -132,10 +134,20 @@ public class Registration {
 	/*
 	 * armor
 	 */
-	public static final RegistryObject<Item> TITANIUM_HELMET = ITEMS.register("titanium_helmet", () -> new ArmorItem(ModArmorMaterials.TITANIUM, EquipmentSlot.HEAD, ITEM_PROPERTIES));
-	public static final RegistryObject<Item> TITANIUM_CHESTPLATE = ITEMS.register("titanium_chestplate", () -> new ArmorItem(ModArmorMaterials.TITANIUM, EquipmentSlot.CHEST, ITEM_PROPERTIES));
+	public static final RegistryObject<Item> BONE_HELMET = ITEMS.register("bone_helmet", () -> new BoneArmorItem(ModArmorMaterials.BONE, EquipmentSlot.HEAD, ITEM_PROPERTIES));
+	public static final RegistryObject<Item> BONE_CHESTPLATE = ITEMS.register("bone_chestplate", () -> new BoneArmorItem(ModArmorMaterials.BONE, EquipmentSlot.CHEST, ITEM_PROPERTIES));
+	public static final RegistryObject<Item> BONE_LEGGINGS = ITEMS.register("bone_leggings", () -> new BoneArmorItem(ModArmorMaterials.BONE, EquipmentSlot.LEGS, ITEM_PROPERTIES));
+	public static final RegistryObject<Item> BONE_BOOTS = ITEMS.register("bone_boots", () -> new BoneArmorItem(ModArmorMaterials.BONE, EquipmentSlot.FEET, ITEM_PROPERTIES));
+	
+	// steel
+	// bone steel
+	
+	public static final RegistryObject<Item> TITANIUM_HELMET = ITEMS.register("titanium_helmet", () -> new TitaniumArmorItem(ModArmorMaterials.TITANIUM, EquipmentSlot.HEAD, ITEM_PROPERTIES));
+	public static final RegistryObject<Item> TITANIUM_CHESTPLATE = ITEMS.register("titanium_chestplate", () -> new TitaniumArmorItem(ModArmorMaterials.TITANIUM, EquipmentSlot.CHEST, ITEM_PROPERTIES));
 	public static final RegistryObject<Item> TITANIUM_LEGGINGS = ITEMS.register("titanium_leggings", () -> new ArmorItem(ModArmorMaterials.TITANIUM, EquipmentSlot.LEGS, ITEM_PROPERTIES));
 	public static final RegistryObject<Item> TITANIUM_BOOTS = ITEMS.register("titanium_boots", () -> new ArmorItem(ModArmorMaterials.TITANIUM, EquipmentSlot.FEET, ITEM_PROPERTIES));
+	
+	// autium
 	
 	//	public static final Item IRON_LEGGINGS = registerItem("iron_leggings", new ArmorItem(ArmorMaterials.IRON, EquipmentSlot.LEGS, (new Item.Properties()).tab(CreativeModeTab.TAB_COMBAT)));
 	public static void init() {

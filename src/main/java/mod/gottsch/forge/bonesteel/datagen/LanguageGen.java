@@ -59,6 +59,11 @@ public class LanguageGen extends LanguageProvider {
         add(Registration.TITANIUM_PICKAXE.get(), "Titanium Pickaxe");
         add(Registration.TITANIUM_SHOVEL.get(), "Titanium Shovel");
         
+        add(Registration.BONE_HELMET.get(), "Bone Helmet");
+        add(Registration.BONE_CHESTPLATE.get(), "Bone Chestplate");
+        add(Registration.BONE_LEGGINGS.get(), "Bone Leggings");
+        add(Registration.BONE_BOOTS.get(), "Bone Boots");
+        
         add(Registration.TITANIUM_HELMET.get(), "Titanium Helmet");
         add(Registration.TITANIUM_CHESTPLATE.get(), "Titanium Chestplate");
         add(Registration.TITANIUM_LEGGINGS.get(), "Titanium Leggings");
