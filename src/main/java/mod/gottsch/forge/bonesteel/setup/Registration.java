@@ -20,6 +20,7 @@ package mod.gottsch.forge.bonesteel.setup;
 import mod.gottsch.forge.bonesteel.BoneSteel;
 import mod.gottsch.forge.bonesteel.item.BoneArmorItem;
 import mod.gottsch.forge.bonesteel.item.ModArmorMaterials;
+import mod.gottsch.forge.bonesteel.item.SteelArmorItem;
 import mod.gottsch.forge.bonesteel.item.TitaniumArmorItem;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -116,6 +117,11 @@ public class Registration {
 	/*
 	 * tools
 	 */
+	public static final RegistryObject<Item> STEEL_AXE = ITEMS.register("steel_axe", () -> new AxeItem(STEEL, 6, -3.1F, ITEM_PROPERTIES));
+	public static final RegistryObject<Item> STEEL_HOE = ITEMS.register("steel_hoe", () -> new HoeItem(STEEL, -2, -1F, ITEM_PROPERTIES));	
+	public static final RegistryObject<Item> STEEL_PICKAXE = ITEMS.register("steel_pickaxe", () -> new PickaxeItem(STEEL, 1, -2.8F, ITEM_PROPERTIES));
+	public static final RegistryObject<Item> STEEL_SHOVEL = ITEMS.register("steel_shovel", () -> new ShovelItem(STEEL, 1.5F, -3F, ITEM_PROPERTIES));
+	
 	public static final RegistryObject<Item> TITANIUM_AXE = ITEMS.register("titanium_axe", () -> new AxeItem(TITANIUM, 5, -3.1F, ITEM_PROPERTIES));
 	public static final RegistryObject<Item> TITANIUM_HOE = ITEMS.register("titanium_hoe", () -> new HoeItem(TITANIUM, -3, 0F, ITEM_PROPERTIES));	
 	public static final RegistryObject<Item> TITANIUM_PICKAXE = ITEMS.register("titanium_pickaxe", () -> new PickaxeItem(TITANIUM, 1, -2.8F, ITEM_PROPERTIES));
@@ -134,14 +140,21 @@ public class Registration {
 	/*
 	 * armor
 	 */
+	// bone
 	public static final RegistryObject<Item> BONE_HELMET = ITEMS.register("bone_helmet", () -> new BoneArmorItem(ModArmorMaterials.BONE, EquipmentSlot.HEAD, ITEM_PROPERTIES));
 	public static final RegistryObject<Item> BONE_CHESTPLATE = ITEMS.register("bone_chestplate", () -> new BoneArmorItem(ModArmorMaterials.BONE, EquipmentSlot.CHEST, ITEM_PROPERTIES));
 	public static final RegistryObject<Item> BONE_LEGGINGS = ITEMS.register("bone_leggings", () -> new BoneArmorItem(ModArmorMaterials.BONE, EquipmentSlot.LEGS, ITEM_PROPERTIES));
 	public static final RegistryObject<Item> BONE_BOOTS = ITEMS.register("bone_boots", () -> new BoneArmorItem(ModArmorMaterials.BONE, EquipmentSlot.FEET, ITEM_PROPERTIES));
 	
 	// steel
+	public static final RegistryObject<Item> STEEL_HELMET = ITEMS.register("steel_helmet", () -> new SteelArmorItem(ModArmorMaterials.STEEL, EquipmentSlot.HEAD, ITEM_PROPERTIES));
+	public static final RegistryObject<Item> STEEL_CHESTPLATE = ITEMS.register("steel_chestplate", () -> new SteelArmorItem(ModArmorMaterials.STEEL, EquipmentSlot.CHEST, ITEM_PROPERTIES));
+	public static final RegistryObject<Item> STEEL_LEGGINGS = ITEMS.register("steel_leggings", () -> new ArmorItem(ModArmorMaterials.STEEL, EquipmentSlot.LEGS, ITEM_PROPERTIES));
+	public static final RegistryObject<Item> STEEL_BOOTS = ITEMS.register("steel_boots", () -> new ArmorItem(ModArmorMaterials.STEEL, EquipmentSlot.FEET, ITEM_PROPERTIES));
+	
 	// bone steel
 	
+	// titanium
 	public static final RegistryObject<Item> TITANIUM_HELMET = ITEMS.register("titanium_helmet", () -> new TitaniumArmorItem(ModArmorMaterials.TITANIUM, EquipmentSlot.HEAD, ITEM_PROPERTIES));
 	public static final RegistryObject<Item> TITANIUM_CHESTPLATE = ITEMS.register("titanium_chestplate", () -> new TitaniumArmorItem(ModArmorMaterials.TITANIUM, EquipmentSlot.CHEST, ITEM_PROPERTIES));
 	public static final RegistryObject<Item> TITANIUM_LEGGINGS = ITEMS.register("titanium_leggings", () -> new ArmorItem(ModArmorMaterials.TITANIUM, EquipmentSlot.LEGS, ITEM_PROPERTIES));

@@ -19,8 +19,10 @@ package mod.gottsch.forge.bonesteel.setup;
 
 import mod.gottsch.forge.bonesteel.BoneSteel;
 import mod.gottsch.forge.bonesteel.client.renderer.armor.BoneArmorRenderer;
+import mod.gottsch.forge.bonesteel.client.renderer.armor.SteelArmorRenderer;
 import mod.gottsch.forge.bonesteel.client.renderer.armor.TitaniumArmorRenderer;
 import mod.gottsch.forge.bonesteel.item.BoneArmorItem;
+import mod.gottsch.forge.bonesteel.item.SteelArmorItem;
 import mod.gottsch.forge.bonesteel.item.TitaniumArmorItem;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.EntityRenderersEvent;
@@ -43,6 +45,7 @@ public class ClientSetup {
 	@SubscribeEvent
 	public static void registerArmorRenderers(EntityRenderersEvent.AddLayers event) {
 		GeoArmorRenderer.registerArmorRenderer(BoneArmorItem.class, BoneArmorRenderer::new);
+		GeoArmorRenderer.registerArmorRenderer(SteelArmorItem.class, SteelArmorRenderer::new);
 		GeoArmorRenderer.registerArmorRenderer(TitaniumArmorItem.class, TitaniumArmorRenderer::new);
 	}
 }

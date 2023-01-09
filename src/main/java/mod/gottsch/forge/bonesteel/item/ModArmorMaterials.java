@@ -38,9 +38,9 @@ public enum ModArmorMaterials implements ArmorMaterial {
 	BONE("bone", 22, new int[]{ 2, 5, 6, 2}, 11, SoundEvents.ARMOR_EQUIP_LEATHER, 0.5F, 0.0F, () -> {
 		return Ingredient.of(Items.BONE);
 	}),
-//	CHAIN("chainmail", 15, new int[]{1, 4, 5, 2}, 12, SoundEvents.ARMOR_EQUIP_CHAIN, 0.0F, 0.0F, () -> {
-//		return Ingredient.of(Items.IRON_INGOT);
-//	}),
+	STEEL("steel", 22, new int[]{ 2, 5, 7, 2}, 10, SoundEvents.ARMOR_EQUIP_IRON, 1.0F, 0.0F, () -> {
+		return Ingredient.of(Registration.STEEL_INGOT.get());
+	}),
 //	IRON("iron", 15, new int[]{2, 5, 6, 2}, 9, SoundEvents.ARMOR_EQUIP_IRON, 0.0F, 0.0F, () -> {
 //		return Ingredient.of(Items.IRON_INGOT);
 //	}),
