@@ -154,7 +154,7 @@ dependencies {
     // compileOnly fg.deobf("mezz.jei:jei-${mc_version}:${jei_version}:api") // Adds JEI API as a compile dependency
     // runtimeOnly fg.deobf("mezz.jei:jei-${mc_version}:${jei_version}") // Adds the full JEI mod as a runtime dependency
     // implementation fg.deobf("com.tterrag.registrate:Registrate:MC${mc_version}-${registrate_version}") // Adds registrate as a dependency
-	compileOnly fg.deobf("someguyssoftware.gottschcore:GottschCore:mc1.18.2-f40.1.0-v1.7.0")
+	compileOnly fg.deobf("someguyssoftware.gottschcore:GottschCore:mc1.18.2-f40.1.0-v2.0.0")
 	implementation fg.deobf('software.bernie.geckolib:geckolib-forge-1.18:3.0.34')
     // Examples using mod jars from ./libs
     // implementation fg.deobf("blank:coolmod-${mc_version}:${coolmod_version}")
@@ -169,11 +169,11 @@ jar {
     manifest {
         attributes([
                 "Specification-Title"     : "bonesteel",
-                "Specification-Vendor"    : "bonesteelsareus",
+                "Specification-Vendor"    : "gottsch",
                 "Specification-Version"   : "1", // We are version 1 of ourselves
                 "Implementation-Title"    : project.name,
                 "Implementation-Version"  : project.jar.archiveVersion,
-                "Implementation-Vendor"   : "bonesteelsareus",
+                "Implementation-Vendor"   : "gottsch",
                 "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
         ])
     }
